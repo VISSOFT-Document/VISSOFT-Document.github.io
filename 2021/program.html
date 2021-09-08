@@ -62,81 +62,318 @@
 
             <div class="col-sm-12">
 
-          <a name="Accepted"></a><h2>Program</h2>
+          <script src="js/timezonechange.js"></script>
 
-<p>The details of the full program of VISSOFT will be announced very soon. In the meantime, we list below all presentations that will be part of the program.</p>
 
-<div id="TP" class="panel panel-default">
-<div class="panel-heading"><b>Technical Papers</b></div>
-<!-- Table -->
-  <table class="table table-striped">
-  	<tbody>
-  		<tr><td>1</td><td><b>A Scalable Log Differencing Visualisation Applied to COBOL Refactoring</b><br><i><font size="2">Céline Deknop, Kim Mens, Alexandre Bergel, Johan Fabry and Vadim Zaytsev</font></i><br></td></tr>
-  		<tr><td>2</td><td><b>CodeCity: On-Screen or in Virtual Reality?</b><br><i><font size="2">David Moreno-Lumbreras, Roberto Minelli, Andrea Villaverde, Michele Lanza and Jesus M. Gonzalez-Barahona</font></i><br></td></tr>
-  		<tr><td>3</td><td><b>CodingTM: Development Task Visualization for SW Code Comprehension</b><br><i><font size="2">Taeyoung Kim, Suntae Kim and Duksan Ryu. </font></i><br></td></tr>
-  		<tr><td>4</td><td><b>Continuous Rationale Visualization</b><br><i><font size="2">Anja Kleebaum, Barbara Paech, Jan Ole Johanssen and Bernd Bruegge</font></i><br></td></tr>
-  		<tr><td>5</td><td><b>Global Overviews of Granular Test Coverage with Matrix Visualizations</b><br><i><font size="2">Kaj Dreef, Vijay Krishna Palepu and James Jones</font></i><br></td></tr>
-  		<tr><td>6</td><td><b>Trace Visualization within the Software City Metaphor: A Controlled Experiment on Program Comprehension</b><br><i><font size="2">Veronika Dashuber and Michael Philippsen</font></i><br></td></tr>
-  		<tr><td>7</td><td><b>TransVis: Using Visualizations and Chatbots for Supporting Transient Behavior in Microservice Systems</b><br><i><font size="2">Samuel Beck, Sebastian Frank, Mir Alireza Hakamian, Leonel Merino and André van Hoorn</font></i><br></td></tr>
-  		<tr><td>8</td><td><b>Visualization of Object-Oriented Variability Implementations as Cities</b><br><i><font size="2">Johann Mortara, Philippe Collet and Anne-Marie Déry</font></i><br></td></tr>
-  		<tr><td>9</td><td><b>Visualizing Metric Trends for Software Portfolio Quality Management</b><br><i><font size="2">Patric Genfer, Johann Grabner, Christina Zoffi, Mario Bernhart and Thomas Grechenig</font></i><br></td></tr>
-
-  	</tbody>
-  </table>
+<div tabindex="-1" id="timeZoneControl" class="modal" style="display: none;">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a data - dismiss="modal" class="close"><span class="glyphicon glyphicon-remove"></span></a>
+          <h3> Display in different time zone </h3>
+      </div>
+      <div class="modal-body">
+        <span class="help-block"> The program is currently displayed in <strong id="UTCTimeZone2"> (UTC) Coordinated Universal Time </strong>.</span>
+        <form name="form1139089877088cf2f270acecff8c654af0cbae52869" id="form1139089877088cf2f270acecff8c654af0cbae52869" action="" accept - charset="UTF-8" method="POST" role="form" class="form-horizontal">
+          <input type="hidden" name="form1139089877088cf2f270acecff8c654af0cbae52869" value="1">
+          <input type="hidden" name="context" value="vissof-2020">
+          <input type="hidden" name="program" value="program-vissoft-2020">
+          <div class="row form-group ">
+            <label for="4f313ae9a1caf4791433d8edc07c6dad" class="control-label col-sm-2"></label>
+            <div class="col-sm-10"><label class="radio">
+              <input type="radio" name="7f1c530082a1648d7f4d99b4d59acfb5" value="false" onchange="if( ($(this).val() == 'true' &amp;&amp; this.checked) != $('#cdceca88b9553d3761c1a46f73a10d19').is(':visible') ) { $('#cdceca88b9553d3761c1a46f73a10d19').fadeToggle( 250 ); }">Use conference time zone: (UTC) Coordinated Universal Time</label>
+              <label class="radio">
+                <input type="radio" checked="checked" name="7f1c530082a1648d7f4d99b4d59acfb5" value="true" onchange="if( ($(this).val() == 'true' &amp;&amp; this.checked) != $('#cdceca88b9553d3761c1a46f73a10d19').is(':visible') ) { $('#cdceca88b9553d3761c1a46f73a10d19').fadeToggle( 250 ); }"><strong> Select other time zone </strong></label>
+                <div id="cdceca88b9553d3761c1a46f73a10d19">
+                  <select name="717f7884f614e417d7e2149e90cc086e" id="4f313ae9a1caf4791433d8edc07c6dad" class="select form-control">
+                    <option value="" selected="selected" data-utc-minute-offset="0"></option>
+                    <option value="Etc/GMT+12" data-utc-minute-offset="-720">(GMT-12:00) AoE (Anywhere On Earth)</option>
+                    <option value="Pacific/Midway" data-utc-minute-offset="-660">(GMT-11:00) Midway Island, Samoa</option>
+                    <option value="America/Adak" data-utc-minute-offset="-540">(GMT-09:00) Hawaii-Aleutian</option>
+                    <option value="Etc/GMT+10" data-utc-minute-offset="-600">(GMT-10:00) Hawaii</option>
+                    <option value="Pacific/Marquesas" data-utc-minute-offset="-570">(GMT-09:30) Marquesas Islands</option>
+                    <option value="Pacific/Gambier" data-utc-minute-offset="-540">(GMT-09:00) Gambier Islands</option>
+                    <option value="America/Anchorage" data-utc-minute-offset="-480">(GMT-08:00) Alaska</option>
+                    <option value="America/Ensenada" data-utc-minute-offset="-420">(GMT-07:00) Tijuana, Baja California</option>
+                    <option value="Etc/GMT+8" data-utc-minute-offset="-480">(GMT-08:00) Pitcairn Islands</option>
+                    <option value="America/Los_Angeles" data-utc-minute-offset="-420">(GMT-07:00) Pacific Time (US &amp;Canada)</option>
+                    <option value="America/Denver" data-utc-minute-offset="-360">(GMT-06:00) Mountain Time (US &amp;Canada)</option>
+                    <option value="America/Chihuahua" data-utc-minute-offset="-360">(GMT-06:00) Chihuahua, La Paz, Mazatlan</option>
+                    <option value="America/Dawson_Creek" data-utc-minute-offset="-420">(GMT-07:00) Arizona</option>
+                    <option value="America/Belize" data-utc-minute-offset="-360">(GMT-06:00) Saskatchewan, Central America</option>
+                    <option value="America/Cancun" data-utc-minute-offset="-300">(GMT-05:00) Guadalajara, Mexico City, Monterrey</option>
+                    <option value="Chile/EasterIsland" data-utc-minute-offset="-300">(GMT-05:00) Easter Island</option>
+                    <option value="America/Chicago" data-utc-minute-offset="-300">(GMT-05:00) Central Time (US &amp;Canada)</option>
+                    <option value="America/New_York" data-utc-minute-offset="-240">(GMT-04:00) Eastern Time (US &amp;Canada)</option>
+                    <option value="America/Havana" data-utc-minute-offset="-240">(GMT-04:00) Cuba</option>
+                    <option value="America/Bogota" data-utc-minute-offset="-300">(GMT-05:00) Bogota, Lima, Quito, Rio Branco</option>
+                    <option value="America/Caracas" data-utc-minute-offset="-240">(GMT-04:00) Caracas</option>
+                    <option value="America/Santiago" data-utc-minute-offset="-180">(GMT-03:00) Santiago</option>
+                    <option value="America/La_Paz" data-utc-minute-offset="-240">(GMT-04:00) La Paz</option>
+                    <option value="Atlantic/Stanley" data-utc-minute-offset="-180">(GMT-03:00) Faukland Islands</option>
+                    <option value="America/Campo_Grande" data-utc-minute-offset="-240">(GMT-04:00) Manaus, Amazonas, Brazil</option>
+                    <option value="America/Goose_Bay" data-utc-minute-offset="-180">(GMT-03:00) Atlantic Time (Goose Bay)</option>
+                    <option value="America/Glace_Bay" data-utc-minute-offset="-180">(GMT-03:00) Atlantic Time (Canada)</option>
+                    <option value="America/St_Johns" data-utc-minute-offset="-150">(GMT-02:30) Newfoundland</option>
+                    <option value="America/Araguaina" data-utc-minute-offset="-180">(GMT-03:00) UTC-3</option>
+                    <option value="America/Montevideo" data-utc-minute-offset="-180">(GMT-03:00) Montevideo</option>
+                    <option value="America/Miquelon" data-utc-minute-offset="-120">(GMT-02:00) Miquelon, St. Pierre</option>
+                    <option value="America/Godthab" data-utc-minute-offset="-120">(GMT-02:00) Greenland</option>
+                    <option value="America/Argentina/Buenos_Aires" data-utc-minute-offset="-180">(GMT-03:00) Buenos Aires</option>
+                    <option value="America/Sao_Paulo" data-utc-minute-offset="-180">(GMT-03:00) Brasilia, Distrito Federal, Brazil</option>
+                    <option value="America/Noronha" data-utc-minute-offset="-120">(GMT-02:00) Mid-Atlantic</option>
+                    <option value="Atlantic/Cape_Verde" data-utc-minute-offset="-60">(GMT-01:00) Cape Verde Is.</option>
+                    <option value="Atlantic/Azores" data-utc-minute-offset="0">(GMT) Azores</option>
+                    <option value="Etc/UTC" data-utc-minute-offset="0">(UTC) Coordinated Universal Time</option>
+                    <option value="Europe/Belfast" data-utc-minute-offset="60">(GMT+01:00) Greenwich Mean Time : Belfast</option>
+                    <option value="Europe/Dublin" data-utc-minute-offset="60">(GMT+01:00) Greenwich Mean Time : Dublin</option>
+                    <option value="Europe/Lisbon" data-utc-minute-offset="60">(GMT+01:00) Greenwich Mean Time : Lisbon</option>
+                    <option value="Europe/London" data-utc-minute-offset="60">(GMT+01:00) Greenwich Mean Time : London</option>
+                    <option value="Africa/Abidjan" data-utc-minute-offset="0">(GMT) Monrovia, Reykjavik</option>
+                    <option value="Europe/Amsterdam" data-utc-minute-offset="120">(GMT+02:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna</option>
+                    <option value="Europe/Belgrade" data-utc-minute-offset="120">(GMT+02:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague</option>
+                    <option value="Europe/Brussels" data-utc-minute-offset="120">(GMT+02:00) Brussels, Copenhagen, Madrid, Paris</option>
+                    <option value="Africa/Algiers" data-utc-minute-offset="60">(GMT+01:00) West Central Africa</option>
+                    <option value="Africa/Windhoek" data-utc-minute-offset="120">(GMT+02:00) Windhoek</option>
+                    <option value="Asia/Beirut" data-utc-minute-offset="180">(GMT+03:00) Beirut</option>
+                    <option value="Africa/Cairo" data-utc-minute-offset="120">(GMT+02:00) Cairo</option>
+                    <option value="Asia/Gaza" data-utc-minute-offset="180">(GMT+03:00) Gaza</option>
+                    <option value="Africa/Blantyre" data-utc-minute-offset="120">(GMT+02:00) Harare, Pretoria</option>
+                    <option value="Asia/Jerusalem" data-utc-minute-offset="180">(GMT+03:00) Jerusalem</option>
+                    <option value="Europe/Minsk" data-utc-minute-offset="180">(GMT+03:00) Minsk</option>
+                    <option value="Asia/Damascus" data-utc-minute-offset="180">(GMT+03:00) Syria</option>
+                    <option value="Europe/Moscow" data-utc-minute-offset="180">(GMT+03:00) Moscow, St. Petersburg, Volgograd</option>
+                    <option value="Africa/Addis_Ababa" data-utc-minute-offset="180">(GMT+03:00) Nairobi</option>
+                    <option value="Asia/Tehran" data-utc-minute-offset="270">(GMT+04:30) Tehran</option>
+                    <option value="Asia/Dubai" data-utc-minute-offset="240">(GMT+04:00) Abu Dhabi, Muscat</option>
+                    <option value="Asia/Yerevan" data-utc-minute-offset="240">(GMT+04:00) Yerevan</option>
+                    <option value="Asia/Kabul" data-utc-minute-offset="270">(GMT+04:30) Kabul</option>
+                    <option value="Asia/Yekaterinburg" data-utc-minute-offset="300">(GMT+05:00) Ekaterinburg</option>
+                    <option value="Asia/Tashkent" data-utc-minute-offset="300">(GMT+05:00) Tashkent</option>
+                    <option value="Asia/Kolkata" data-utc-minute-offset="330">(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi</option>
+                    <option value="Asia/Katmandu" data-utc-minute-offset="345">(GMT+05:45) Kathmandu</option>
+                    <option value="Asia/Dhaka" data-utc-minute-offset="360">(GMT+06:00) Astana, Dhaka</option>
+                    <option value="Asia/Novosibirsk" data-utc-minute-offset="420">(GMT+07:00) Novosibirsk</option>
+                    <option value="Asia/Rangoon" data-utc-minute-offset="390">(GMT+06:30) Yangon (Rangoon)</option>
+                    <option value="Asia/Bangkok" data-utc-minute-offset="420">(GMT+07:00) Bangkok, Hanoi, Jakarta</option>
+                    <option value="Asia/Krasnoyarsk" data-utc-minute-offset="420">(GMT+07:00) Krasnoyarsk</option>
+                    <option value="Asia/Hong_Kong" data-utc-minute-offset="480">(GMT+08:00) Beijing, Chongqing, Hong Kong, Urumqi</option>
+                    <option value="Asia/Irkutsk" data-utc-minute-offset="480">(GMT+08:00) Irkutsk, Ulaan Bataar</option>
+                    <option value="Australia/Perth" data-utc-minute-offset="480">(GMT+08:00) Perth</option>
+                    <option value="Australia/Eucla" data-utc-minute-offset="525">(GMT+08:45) Eucla</option>
+                    <option value="Asia/Tokyo" data-utc-minute-offset="540">(GMT+09:00) Osaka, Sapporo, Tokyo</option>
+                    <option value="Asia/Seoul" data-utc-minute-offset="540">(GMT+09:00) Seoul</option>
+                    <option value="Asia/Yakutsk" data-utc-minute-offset="540">(GMT+09:00) Yakutsk</option>
+                    <option value="Australia/Adelaide" data-utc-minute-offset="570">(GMT+09:30) Adelaide</option>
+                    <option value="Australia/Darwin" data-utc-minute-offset="570">(GMT+09:30) Darwin</option>
+                    <option value="Australia/Brisbane" data-utc-minute-offset="600">(GMT+10:00) Brisbane</option>
+                    <option value="Australia/Hobart" data-utc-minute-offset="600">(GMT+10:00) Hobart</option>
+                    <option value="Asia/Vladivostok" data-utc-minute-offset="600">(GMT+10:00) Vladivostok</option>
+                    <option value="Australia/Lord_Howe" data-utc-minute-offset="630">(GMT+10:30) Lord Howe Island</option>
+                    <option value="Etc/GMT-11" data-utc-minute-offset="660">(GMT+11:00) Solomon Is., New Caledonia</option>
+                    <option value="Asia/Magadan" data-utc-minute-offset="660">(GMT+11:00) Magadan</option>
+                    <option value="Pacific/Norfolk" data-utc-minute-offset="660">(GMT+11:00) Norfolk Island</option>
+                    <option value="Asia/Anadyr" data-utc-minute-offset="720">(GMT+12:00) Anadyr, Kamchatka</option>
+                    <option value="Pacific/Auckland" data-utc-minute-offset="720">(GMT+13:00) Auckland, Wellington</option>
+                    <option value="Etc/GMT-12" data-utc-minute-offset="720">(GMT+12:00) Fiji, Kamchatka, Marshall Is.</option>
+                    <option value="Pacific/Chatham" data-utc-minute-offset="765">(GMT+13:45) Chatham Islands</option>
+                    <option value="Pacific/Tongatapu" data-utc-minute-offset="780">(GMT+13:00) Nuku'alofa</option>
+                    <option value="Pacific/Kiritimati" data-utc-minute-offset="840">(GMT+14:00) Kiritimati</option></select>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10"><button style="position: absolute; left: -9999px; width: 1px; height: 1px;" onclick="javascript:changeTimeZone(); return false;"></button><a href="javascript:void(0)" onclick="javascript:loadImageElem=this;$(this.previousSibling).click()" class="btn btn-primary btn btn-default" data-dismiss="modal">Apply</a></div>
+        </div>
+    </form>
+  </div>
+<div class="modal-footer"><a href="#" data-dismiss="modal" class="btn btn-default"><span class="glyphicon glyphicon-remove"></span> Close</a></div>
+</div>
+</div>
 </div>
 
-<div id="NIER" class="panel panel-default">
-<div class="panel-heading"><b>NIER/TD Papers</b></div>
-<!-- Table -->
-  <table class="table table-striped">
-  	<tbody>
-
-		<tr><td>1</td><td><b>Analyzing and Visualizing Projects and their Relations in Software Ecosystems</b><br><i><font size="2">Van Tuan Tran, Cheng Cheng, Fabio Petrillo and Yann-Gaël Guéhéneuc</font></i><br></td></tr>
-  		<tr><td>2</td><td><b>Augmenting Code Review Experience Through Visualization</b><br><i><font size="2">Faruk Balcı, Dilruba Sultan Haliloğlu, Onur Şahin, Cankat Tilki, Mehmet Ata Yurtsever and Eray Tüzün</font></i><br></td></tr>
-  		<tr><td>3</td><td><b>CHANGEVIZ: Enhancing the GitHub Interface with Method Calls Information</b><br><i><font size="2">Lorenzo Gasparini, Enrico Fregnan, Larissa Braz, Tobias Baum and Alberto Bacchelli</font></i><br></td></tr>
-  		<tr><td>4</td><td><b>Codoc: Code-driven Architectural View Specification Framework for Python</b><br><i><font size="2">Casper Weiss Bang and Mircea Lungu</font></i><br></td></tr>
-  		<tr><td>5</td><td><b>Live Visualization of Dynamic Software Cities with Heat Map Overlays</b><br><i><font size="2">Alexander Krause, Malte Hansen and Wilhelm Hasselbring</font></i><br></td></tr>
-  		<tr><td>6</td><td><b>React-bratus: Visualising React.js Component Hierarchies</b><br><i><font size="2">Mircea Lungu and Stephan Boersma</font></i><br></td></tr>
-  		<tr><td>7</td><td><b>Towards a JSON-based Algorithm Animation Language</b><br><i><font size="2">Artturi Tilanterä, Giacomo Mariani, Ari Korhonen and Otto Seppälä</font></i><br></td></tr>
-  		<tr><td>8</td><td><b>Visualizing Data in Software Cities</b><br><i><font size="2">Susanna Ardigò, Csaba Nagy, Roberto Minelli and Michele Lanza</font></i><br></td></tr>
-  		<tr><td>9</td><td><b>Visualizing Discord Servers</b><br><i><font size="2">Marco Raglianti, Roberto Minelli, Csaba Nagy and Michele Lanza</font></i><br></td></tr>
-  		<tr><td>10</td><td><b>Visualizing GitHub Issues</b><br><i><font size="2">Aron Fiechter, Roberto Minelli, Csaba Nagy and Michele Lanza</font></i><br></td></tr>
-  		<tr><td>11</td><td><b>Visually Analyzing the Code Quality of Component-based Web Applications</b><br><i><font size="2">Hagen Tarner, Daniel van den Bongard and Fabian Beck</font></i><br></td></tr>
-  		<tr><td>12</td><td><b>Voronoi Evolving Treemaps</b><br><i><font size="2">Davide Paolo Tua, Roberto Minelli and Michele Lanza</font></i><br></td></tr>
-
- 	</tbody>
-  </table>
+<div class="col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-2 col-md-6 col-md-offset-3">
+    <div class="panel panel-default">
+        <div class="panel-body text-center">
+          <p>Times are displayed in time zone: <strong id="UTCTimeZone1">(UTC) Coordinated Universal Time</strong> <small><a data-toggle="modal" href="#timeZoneControl">change</a></small></p>
+            <p><strong>FULL/Journal First papers:</strong> 10 + 5 minutes<br> 
+            	<strong>NIER/TD papers:</strong> 5 + 5 minutes<br> 
+            	<strong>Keynote/Capstone:</strong> 45 + 15 minutes<br>
+            	<strong>Tool demo:</strong> 10 + 5 minutes</p>
+        </div>
+    </div>
 </div>
 
-<div id="Journal" class="panel panel-default">
-<div class="panel-heading"><b>Journal First Papers</b></div>
-<!-- Table -->
+<div class="col-sm-12">
+<a name="program"></a>
+    <h2>Program:  <a href="#Monday">Monday</a>, <a href="#Tuesday">Tuesday</a></h2>
+  
+  <div  id="Monday" class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"><b>September 27, Monday</b></div>
+
+  <!-- Table -->
   <table class="table table-striped">
-  	<tbody>
+      
 
-  		<tr><td>1</td><td><b>Visual Augmentation of Source Code Editors: A Systematic Mapping Study</b><br><i><font size="2">Matúš Sulír, Michaela Bačíková, Sergej Chodarev and Jaroslav Porubän</font></i><br></td></tr>
-  		<tr><td>2</td><td><b>An Architecture-Tracking Approach to Evaluate a Modular and Extensible Flight Software for CubeSat Nanosatellites</b><br><i><font size="2">Carlos Gonzalez, Camilo Rojas, Alexandre Bergel and Marcos Diaz</font></i><br></td></tr>
-  	</tbody>
+  <tr><td style="width:100px" id="UTC-13-00-13-15">13:00 - 13:15</td><td><b>Opening</b><br/></td><td></td><td></td></tr>               
+  <tr><td id="UTC-13-15-14-15">13:15 - 14:15</td><td><b>Keynote: Michele Lanza</b><br><br/><td></td></tr>
+  <tr><td id="UTC-14-15-14-30">14:15 -14:30</td><td colspan="2"><b>Break</b><br/></td><td></td></tr>
+  <tr><td id="UTC-14-30-15-15">14:30 - 15:15</td><td><b>Session 1: Software Architecture</b><br><br/><td></td></tr>
+  <tr><td>     </td><td>TransVis: Using Visualizations and Chatbots for Supporting Transient Behavior in Microservice Systems<br/>
+                          <i><font size="2">Samuel Beck, Sebastian Frank, Mir Alireza Hakamian, Leonel Merino and André van Hoorn</font></i><br/>
+                            <font size="2"><a href=""></a></font>
+                          </td><td>FULL</td><td></td></tr>
+  <tr><td>     </td><td>Codoc: Code-driven Architectural View Specification Framework for Python<br/>
+                          <i><font size="2">Casper Weiss Bang and Mircea Lungu</font></i><br/>
+                            <font size="2"><a href=""></a></font>
+                          </td><td>NIER/TD</td><td></td></tr>
+  <tr><td>     </td><td>React-bratus: Visualising React.js Component Hierarchies<br/>
+                          <i><font size="2">Mircea Lungu and Stephan Boersma</font></i><br/>
+                            <font size="2"><a href=""></a></font>
+                          </td><td>NIER/TD</td><td></td></tr>
+  <tr><td>     </td><td>Analyzing and Visualizing Projects and their Relations in Software Ecosystems<br/>
+                          <i><font size="2">Van Tuan Tran, Cheng Cheng, Fabio Petrillo and Yann-Gaël Guéhéneuc</font></i><br/>
+                            <font size="2"><a href=""></a></font>
+                          </td><td>NIER/TD</td><td></td></tr>
+  <tr><td id="UTC-15-15-15-30">15:15 -15:30</td><td colspan="2"><b>Break</b><br/></td><td></td></tr>
+  <tr><td id="UTC-15-30-16-20">15:30 - 16:20</td><td><b>Session 2: Software Comprehension</b><br><br/><td></td></tr>
+
+  <tr><td>     </td><td>CodeCity: On-Screen or in Virtual Reality?<br/>
+                          <i><font size="2">David Moreno-Lumbreras, Roberto Minelli, Andrea Villaverde, Michele Lanza and Jesus M. Gonzalez-Barahona</font></i><br/>
+                            <font size="2"><a href=""></a></font>
+                          </td><td>FULL</td><td></td></tr>
+  <tr><td>     </td><td>An Architecture-Tracking Approach to Evaluate a Modular and Extensible Flight Software for CubeSat Nanosatellites<br/>
+                          <i><font size="2">Carlos Gonzalez, Camilo Rojas, Alexandre Bergel and Marcos Diaz</font></i><br/>
+                            <font size="2"><a href=""></a></font>
+                          </td><td>JOURNAL FIRST</td><td></td></tr>
+  <tr><td>     </td><td>Towards a JSON-based Algorithm Animation Language<br/>
+                          <i><font size="2">Artturi Tilanterä, Giacomo Mariani, Ari Korhonen and Otto Seppälä</font></i><br/>
+                            <font size="2"><a href=""></a></font>
+                          </td><td>NIER/TD</td><td></td></tr>
+  <tr><td>     </td><td>Understanding High-Level Behavior with Light-Traces Visualization Metaphor<br/>
+                          <i><font size="2">Dorian Vandamme, Houari Sahraoui and Pierre Poulin</font></i><br/>
+                            <font size="2"><a href=""></a></font>
+                          </td><td>NIER/TD</td><td></td></tr>
+
+  <tr><td id="UTC-16-20-16-35">16:20 -16:35</td><td colspan="2"><b>Break</b><br/></td><td></td></tr>
+  <tr><td id="UTC-16-35-17-25">16:35 - 17:25</td><td><b>Session 3: City Metaphor</b><br><br/><td></td></tr>
+  <tr><td>     </td><td>Trace Visualization within the Software City Metaphor: A Controlled Experiment on Program Comprehension<br/>
+                          <i><font size="2">Veronika Dashuber and Michael Philippsen</font></i><br/>
+                            <font size="2"><a href=""></a></font>
+                          </td><td>FULL</td><td></td></tr>
+  <tr><td>     </td><td>Visualization of Object-Oriented Variability Implementations as Cities<br/>
+                          <i><font size="2">Johann Mortara, Philippe Collet and Anne-Marie Déry</font></i><br/>
+                            <font size="2"><a href=""></a></font>
+                          </td><td>FULL</td><td></td></tr>
+  <tr><td>     </td><td>Visualizing Data in Software Cities<br/>
+                          <i><font size="2">Susanna Ardigò, Csaba Nagy, Roberto Minelli and Michele Lanza</font></i><br/>
+                            <font size="2"><a href=""></a></font>
+                          </td><td>NIER/TD</td><td></td></tr>
+  <tr><td>     </td><td>Live Visualization of Dynamic Software Cities with Heat Map Overlays<br/>
+                          <i><font size="2">Alexander Krause, Malte Hansen and Wilhelm Hasselbring</font></i><br/>
+                            <font size="2"><a href=""></a></font>
+                          </td><td>NIER/TD</td><td></td></tr>
+
+  <tr><td id="UTC-17-25-17-40">17:25 -17:40</td><td colspan="2"><b>Break</b><br/></td><td></td></tr>
+  <tr><td id="UTC-17-40-18-30">17:40 - 18:30</td><td><b>Session 4: Software Process Management</b><br><br/><td></td></tr>
+
+  <tr><td>     </td><td>Continuous Rationale Visualization<br/>
+                          <i><font size="2">Anja Kleebaum, Barbara Paech, Jan Ole Johanssen and Bernd Bruegge</font></i><br/>
+                            <font size="2"><a href=""></a></font>
+                          </td><td>FULL</td><td></td></tr>
+  <tr><td>     </td><td>Visualizing Discord Servers<br/>
+                          <i><font size="2">Marco Raglianti, Roberto Minelli, Csaba Nagy and Michele Lanza</font></i><br/>
+                            <font size="2"><a href=""></a></font>
+                          </td><td>NIER/TD</td><td></td></tr>
+  <tr><td>     </td><td>Visualizing GitHub Issues<br/>
+                          <i><font size="2">Aron Fiechter, Roberto Minelli, Csaba Nagy and Michele Lanza</font></i><br/>
+                            <font size="2"><a href=""></a></font>
+                          </td><td>NIER/TD</td><td></td></tr>
+  <tr><td>     </td><td>An Interactive Dashboard for Visualizing the Provenance of Software Development Processes<br/>
+                          <i><font size="2">Andreas Schreiber, Lynn von Kurnatowski, Annika Meinecke and Claas de Boer</font></i><br/>
+                            <font size="2"><a href=""></a></font>
+                          </td><td>NIER/TD</td><td></td></tr>
+
+  <tr><td id="UTC-18-30-18-45">18:30 -18:45</td><td colspan="2"><b>Break</b><br/></td><td></td></tr>
+  <tr><td id="UTC-18-45-19-45">18:45 - 19:45</td><td colspan="2"><b>Social Event</b><br/></td><td></td></tr>
+  <tr><td id="UTC-19-45-20-00">19:45 - 20:00</td><td colspan="2"><b>Closing</b><br/></td><td></td></tr>
   </table>
-</div>
+  </div> <!-- panel day 1 -->
+  <div>
+        <br/>
+        <br/>
+  </div>
+        
+  <div id="Tuesday"  class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"><b>September 28, Tuesday</b></div>
 
-<div id="ToolDemo" class="panel panel-default">
-<div class="panel-heading"><b>Tool Demo</b></div>
-<!-- Table -->
+  <!-- Table -->
   <table class="table table-striped">
-  	<tbody>
 
-  		<tr><td>1</td><td><b>VariCity: Visualizing Object-Oriented Variability Implementations as Cities</b><br><i><font size="2">Johann Mortara, Philippe Collet and Anne-Marie Dery-Pinna</font></i><br></td></tr>
-  		<tr><td>2</td><td><b>Visualising log-based behavioral differences with LogDiffNG</b><br><i><font size="2">Céline Deknop, Kim Mens, Alexandre Bergel, Johan Fabry and Vadim Zaytsev</font></i><br></td></tr>
-  	</tbody>
+  <tr><td style="width:100px" id="UTC-11-00-11-15">11:00 - 11:15</td><td><b>Opening</b><br/> </td><td></td><td></td></tr>
+  <tr><td id="UTC-11-15-12-00">11:15 - 12:00</td><td><b>Session 5: Software Maintenance</b><br><br/></td><td></td></tr>
+  <tr><td>     </td><td>CodingTM: Development Task Visualization for SW Code Comprehension<br/>
+                          <i><font size="2">Taeyoung Kim, Suntae Kim and Duksan Ryu</font></i><br/>
+                            <font size="2"><a href=""></a></font>
+                          </td><td>FULL</td><td></td></tr>
+  <tr><td>     </td><td>Visual Augmentation of Source Code Editors: A Systematic Mapping Study<br/>
+                          <i><font size="2">Matúš Sulír, Michaela Bačíková, Sergej Chodarev and Jaroslav Porubän</font></i><br/>
+                            <font size="2"><a href=""></a></font>
+                          </td><td>JOURNAL FIRST</td><td></td></tr>
+  <tr><td>     </td><td>CHANGEVIZ: Enhancing the GitHub Interface with Method Calls Information<br/>
+                          <i><font size="2">Lorenzo Gasparini, Enrico Fregnan, Larissa Braz, Tobias Baum and Alberto Bacchelli</font></i><br/>
+                            <font size="2"><a href=""></a></font>
+                          </td><td>NIER/TD</td><td></td></tr>
+  <tr><td>     </td><td>Augmenting Code Review Experience Through Visualization<br/>
+                          <i><font size="2">Faruk Balcı, Dilruba Sultan Haliloğlu, Onur Şahin, Cankat Tilki, Mehmet Ata Yurtsever and Eray Tüzün</font></i><br/>
+                            <font size="2"><a href=""></a></font>
+                          </td><td>NIER/TD</td><td></td></tr>
+  <tr><td>     </td><td>Voronoi Evolving Treemaps<br/>
+                          <i><font size="2">Davide Paolo Tua, Roberto Minelli and Michele Lanza</font></i><br/>
+                            <font size="2"><a href=""></a></font>
+                          </td><td>NIER/TD</td><td></td></tr>
+
+  <tr><td id="UTC-12-00-12-15">12:00 - 12:15</td><td colspan="2"><b>Break</b><br/></td><td></td></tr>
+  
+  <tr><td id="UTC-12-15-13-10">12:15 - 13:10</td><td><b>Session 6: Software Quality</b><br><br/></td><td></td><td></td></tr>
+
+  <tr><td>     </td><td>A Scalable Log Differencing Visualisation Applied to COBOL Refactoring<br/>
+                          <i><font size="2">Céline Deknop, Kim Mens, Alexandre Bergel, Johan Fabry and Vadim Zaytsev</font></i><br/>
+                            <font size="2"><a href=""></a></font>
+                          </td><td>FULL</td><td></td></tr>
+  <tr><td>     </td><td>Visualizing Metric Trends for Software Portfolio Quality Management<br/>
+                          <i><font size="2">Patric Genfer, Johann Grabner, Christina Zoffi, Mario Bernhart and Thomas Grechenig</font></i><br/>
+                            <font size="2"><a href=""></a></font>
+                          </td><td>FULL</td><td></td></tr>
+  <tr><td>     </td><td>Visually Analyzing the Code Quality of Component-based Web Applications<br/>
+                          <i><font size="2">Hagen Tarner, Daniel van den Bongard and Fabian Beck</font></i><br/>
+                            <font size="2"><a href=""></a></font>
+                          </td><td>NIER/TD</td><td></td></tr>
+  <tr><td>     </td><td>Global Overviews of Granular Test Coverage with Matrix Visualizations<br/>
+                          <i><font size="2">Kaj Dreef, Vijay Krishna Palepu and James Jones</font></i><br/>
+                            <font size="2"><a href=""></a></font>
+                          </td><td>FULL</td><td></td></tr>
+
+  <tr><td id="UTC-13-10-13-25">13:10 - 13:25</td><td colspan="2"><b>Break</b><br/></td><td></td></tr>
+  <tr><td id="UTC-13-25-13-55">13:25 - 13:55</td><td><b>Session 7: Tool Demo</b><br><br/></td><td></td><td></td></tr>
+
+  <tr><td id="UTC-13-55-14-10">13:55 - 14:10</td><td colspan="2"><b>Break</b><br/></td><td></td></tr>
+  <tr><td id="UTC-14-10-14-55">14:10 - 14:55</td><td><b>Session 8: Awards and MIP Talk</b><br><br/></td><td></td><td></td></tr>
+
+  <tr><td id="UTC-14-55-15-10">14:55 - 15:10</td><td colspan="2"><b>Break</b><br/></td><td></td></tr>
+  <tr><td id="UTC-15-10-16-10">15:10 - 16:10</td><td><b>Capstone: Daniel Weiskopf</b><br><br/><td></td><td></td></tr>
+  <tr><td colspan="1" id="UTC-16-10-16-25">16:10 - 16:25</td><td colspan="2"><b>Closing</b></td></tr>
   </table>
-</div>
-
+  </div> <!-- panel day 2 --> 
 
 
 <a name="Keynote1"></a><h2>Keynote</h2>
   <p>The keynote will be delivered by <a href="http://www.inf.usi.ch/lanza">Michele Lanza</a> from the  Università della Svizzera italiana.</p>
-  <p>The capstone speaker is <a href="https://www.vis.uni-stuttgart.de/en/institute/team/Weiskopf/">Daniel Weiskopf</a> from the University of Stuttgart. More details will be announced soon.</p>     
+  <p>The capstone speaker is <a href="https://www.vis.uni-stuttgart.de/en/institute/team/Weiskopf/">Daniel Weiskopf</a> from the University of Stuttgart. More details will be announced soon.</p>
+
+</div>     
 
             </div><!--col-->
           </div><!--/row-->

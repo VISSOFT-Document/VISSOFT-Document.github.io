@@ -1,0 +1,134 @@
+/* Style tweaks */
+
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+body {
+  padding-top: 64px;
+}
+
+html {
+  min-height: 100.1%;
+}
+
+svg#logo {
+  width: 100%;
+  height: 100%;  
+}
+
+.page-header h1 {
+  text-align: right; 
+  margin-top: -8px; }
+
+.navbar-inverse .navbar-brand {
+  color: #fff;  
+}
+
+footer li.sponsor img {
+  max-height: 32px;
+  padding: 0 0 0px 0.5ex;
+  display:inline;
+  overflow:visible;
+}
+
+img#venue {
+  margin-bottom: 20px; }
+
+#sponsors img {
+  padding: 0em 1em;
+  margin: 0;
+}
+
+footer #sponsors img {
+  width: 50%;
+  float: left;
+  padding: 0em 1em;
+  margin: 0;
+}
+
+span.deprecated {
+  text-decoration: line-through;
+}
+
+div.progress-bar-none {
+  visibility: hidden;
+}
+
+/* for left or right side images */
+.left { float: left; margin: 0 .5em .5em 0; }
+.right { float: right; margin: 0 0 .5em .5em; }
+
+.paragraph-title { font-weight: bold; }
+
+/* Responsive Google maps  - Flexible iFrame */
+
+.Flexible-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.Flexible-container iframe, 
+.Flexible-container object,  
+.Flexible-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Off Canvas */
+
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+}
+
+@media print {
+
+  body {
+    padding-left: 96px;
+    padding-right: 96px;
+  }
+
+  #sidebar, #sponsors, #news-toggle, footer, hr {
+    visibility: hidden;
+  }
+
+  .page-header {
+    border-bottom: none;
+  }
+}

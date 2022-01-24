@@ -63,6 +63,16 @@ div.progress-bar-none {
   visibility: hidden;
 }
 
+#sidebar {
+  margin-top: 70px;
+}
+
+@media(min-width: 992px) {
+  #sidebar {
+    margin-top: 0;
+  }
+}
+
 /* for left or right side images */
 .left { float: left; margin: 0 .5em .5em 0; }
 .right { float: right; margin: 0 0 .5em .5em; }
@@ -139,4 +149,61 @@ div.progress-bar-none {
   .page-header {
     border-bottom: none;
   }
+}
+
+/* Page header */
+.page-header {
+  margin: 0 0 20px 0;
+  border: none;
+}
+
+#logo > img {
+  width: 100%;
+}
+
+/* Program page */
+.artifact {
+  width: 50px;
+  height: 50px;
+}
+
+.section-title {
+  padding-top: 70px;
+}
+
+.session-authors {
+  font-size: 13px;
+  font-style: italic;
+}
+
+/* Page footer */
+.sponsors .sponsors-title {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.sponsors .sponsor-logo > img {
+  display: block;
+  margin: 35px auto;
+  width: auto;
+  max-height: 70px;
+}
+
+/* Committee members */
+.committee-member {
+  font-size: 14px;
+  line-height: 17px;
+  color: #999;
+
+}
+
+.committee-member > h4 {
+  margin-bottom: 5px;
+}
+
+.committee-member > img {
+  margin: 0 auto;
+  height:60%;
+  width:100%;
 }

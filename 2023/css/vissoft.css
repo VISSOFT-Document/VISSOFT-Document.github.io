@@ -207,3 +207,8 @@ div.progress-bar-none {
   height:60%;
   width:100%;
 }
+
+#google-map-container {
+  display: flex;
+  justify-content: center;
+}

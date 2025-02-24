@@ -4,6 +4,8 @@
  * Copyright 2013 Adam Neumann
  * Licensed under the Apache License v2.0
  * http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * modification: added .btn-mastodon styling
  */
 
 .btn-facebook {
@@ -692,6 +694,40 @@
   color: #ffffff;
   background-color: #6e0610;
   *background-color: #56050c;
+}
+
+
+.btn-mastodon {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #1c95d0;
+  *background-color: #0271bf;
+  background-image: -moz-linear-gradient(top, #2daddc, #0271bf);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#2daddc), to(#0271bf));
+  background-image: -webkit-linear-gradient(top, #2daddc, #0271bf);
+  background-image: -o-linear-gradient(top, #2daddc, #0271bf);
+  background-image: linear-gradient(to bottom, #2daddc, #0271bf);
+  background-repeat: repeat-x;
+  border-color: #0271bf #0271bf #014473;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff2daddc', endColorstr='#ff0271bf', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.btn-mastodon:hover,
+.btn-mastodon:focus,
+.btn-mastodon:active,
+.btn-mastodon.active,
+.btn-mastodon.disabled,
+.btn-mastodon[disabled] {
+  color: #ffffff;
+  background-color: #0271bf;
+  *background-color: #0262a6;
+}
+
+.btn-mastodon:active,
+.btn-mastodon.active {
+  background-color: #01538d \9;
 }
 
 .btn-youtube:active,

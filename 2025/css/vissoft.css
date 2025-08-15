@@ -74,8 +74,8 @@ div.progress-bar-none {
 }
 
 /* for left or right side images */
-.left { float: left; margin: 0 .5em .5em 0; }
-.right { float: right; margin: 0 0 .5em .5em; }
+.left { float: left; margin: 0 1em .5em 0; }
+.right { float: right; margin: 0 0 .5em 1em; }
 
 .paragraph-title { font-weight: bold; }
 
@@ -212,3 +212,4 @@ div.progress-bar-none {
   display: flex;
   justify-content: center;
 }
+

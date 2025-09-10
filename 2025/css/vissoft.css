@@ -79,7 +79,7 @@ div.progress-bar-none {
 }
 
 .inline-icon {
-  height: 1em;
+  height: 1.5em;
   width: auto;
   vertical-align: middle;
 }
@@ -223,6 +223,7 @@ div.progress-bar-none {
   display: flex;
   justify-content: center;
 }
+
 
 
 

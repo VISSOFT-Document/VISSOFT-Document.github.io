@@ -78,6 +78,12 @@ div.progress-bar-none {
   }
 }
 
+.inline-icon {
+  height: 1em;
+  width: auto;
+  vertical-align: middle;
+}
+
 /* for left or right side images */
 .left { float: left; margin: 0 1em .5em 0; }
 .right { float: right; margin: 0 0 .5em 1em; }
@@ -217,5 +223,6 @@ div.progress-bar-none {
   display: flex;
   justify-content: center;
 }
+
 
 
